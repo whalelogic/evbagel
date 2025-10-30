@@ -28,10 +28,22 @@ func HomeHandler(c *fiber.Ctx) error {
 	}
 
 	// Render templ components
-	header, _ := renderTemplComponent(components.Header("EvBagel"))
-	footer, _ := renderTemplComponent(components.Footer())
-	buttonAbout, _ := renderTemplComponent(components.Button("Learn More", "/about", "primary"))
-	buttonContact, _ := renderTemplComponent(components.Button("Contact Us", "/contact", "secondary"))
+	header, err := renderTemplComponent(components.Header("EvBagel"))
+	if err != nil {
+		return c.Status(fiber.StatusInternalServerError).SendString("Error rendering header")
+	}
+	footer, err := renderTemplComponent(components.Footer())
+	if err != nil {
+		return c.Status(fiber.StatusInternalServerError).SendString("Error rendering footer")
+	}
+	buttonAbout, err := renderTemplComponent(components.Button("Learn More", "/about", "primary"))
+	if err != nil {
+		return c.Status(fiber.StatusInternalServerError).SendString("Error rendering button")
+	}
+	buttonContact, err := renderTemplComponent(components.Button("Contact Us", "/contact", "secondary"))
+	if err != nil {
+		return c.Status(fiber.StatusInternalServerError).SendString("Error rendering button")
+	}
 
 	data := map[string]interface{}{
 		"Title":         "Home - EvBagel",
@@ -59,10 +71,22 @@ func AboutHandler(c *fiber.Ctx) error {
 	}
 
 	// Render templ components
-	header, _ := renderTemplComponent(components.Header("EvBagel"))
-	footer, _ := renderTemplComponent(components.Footer())
-	buttonHome, _ := renderTemplComponent(components.Button("Back Home", "/", "primary"))
-	buttonContact, _ := renderTemplComponent(components.Button("Contact Us", "/contact", "success"))
+	header, err := renderTemplComponent(components.Header("EvBagel"))
+	if err != nil {
+		return c.Status(fiber.StatusInternalServerError).SendString("Error rendering header")
+	}
+	footer, err := renderTemplComponent(components.Footer())
+	if err != nil {
+		return c.Status(fiber.StatusInternalServerError).SendString("Error rendering footer")
+	}
+	buttonHome, err := renderTemplComponent(components.Button("Back Home", "/", "primary"))
+	if err != nil {
+		return c.Status(fiber.StatusInternalServerError).SendString("Error rendering button")
+	}
+	buttonContact, err := renderTemplComponent(components.Button("Contact Us", "/contact", "success"))
+	if err != nil {
+		return c.Status(fiber.StatusInternalServerError).SendString("Error rendering button")
+	}
 
 	data := map[string]interface{}{
 		"Title":         "About - EvBagel",
@@ -90,10 +114,22 @@ func ContactHandler(c *fiber.Ctx) error {
 	}
 
 	// Render templ components
-	header, _ := renderTemplComponent(components.Header("EvBagel"))
-	footer, _ := renderTemplComponent(components.Footer())
-	buttonHome, _ := renderTemplComponent(components.Button("Back Home", "/", "primary"))
-	buttonAbout, _ := renderTemplComponent(components.Button("About Us", "/about", "success"))
+	header, err := renderTemplComponent(components.Header("EvBagel"))
+	if err != nil {
+		return c.Status(fiber.StatusInternalServerError).SendString("Error rendering header")
+	}
+	footer, err := renderTemplComponent(components.Footer())
+	if err != nil {
+		return c.Status(fiber.StatusInternalServerError).SendString("Error rendering footer")
+	}
+	buttonHome, err := renderTemplComponent(components.Button("Back Home", "/", "primary"))
+	if err != nil {
+		return c.Status(fiber.StatusInternalServerError).SendString("Error rendering button")
+	}
+	buttonAbout, err := renderTemplComponent(components.Button("About Us", "/about", "success"))
+	if err != nil {
+		return c.Status(fiber.StatusInternalServerError).SendString("Error rendering button")
+	}
 
 	data := map[string]interface{}{
 		"Title":       "Contact - EvBagel",
