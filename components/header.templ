@@ -1,0 +1,18 @@
+package components
+
+templ Header(title string) {
+	<header class="bg-gray-800 text-white shadow-lg">
+		<nav class="container mx-auto px-6 py-4">
+			<div class="flex items-center justify-between">
+				<div class="text-2xl font-bold">
+					{ title }
+				</div>
+				<div class="flex space-x-6">
+					<a href="/" class="hover:text-gray-300 transition duration-200">Home</a>
+					<a href="/about" class="hover:text-gray-300 transition duration-200">About</a>
+					<a href="/contact" class="hover:text-gray-300 transition duration-200">Contact</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+}

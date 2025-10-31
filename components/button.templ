@@ -1,0 +1,26 @@
+package components
+
+templ Button(text string, href string, variant string) {
+	if variant == "primary" {
+		<a 
+			href={ templ.URL(href) }
+			class="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-200"
+		>
+			{ text }
+		</a>
+	} else if variant == "secondary" {
+		<a 
+			href={ templ.URL(href) }
+			class="inline-block px-6 py-3 bg-gray-600 text-white font-semibold rounded-lg shadow-md hover:bg-gray-700 transition duration-200"
+		>
+			{ text }
+		</a>
+	} else {
+		<a 
+			href={ templ.URL(href) }
+			class="inline-block px-6 py-3 bg-green-600 text-white font-semibold rounded-lg shadow-md hover:bg-green-700 transition duration-200"
+		>
+			{ text }
+		</a>
+	}
+}
