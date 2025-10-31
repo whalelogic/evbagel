@@ -1,8 +1,14 @@
-# EvBagel
 
-A modern Go web application demonstrating the integration of traditional HTML templates with Templ components.
+<h1>EvBagel 🥯
 
-## Quick Start
+![image](https://img.icons8.com/?size=100&id=u0SDdwgQXX72&format=png&color=000000)
+
+
+### This application works fast! 
+
+#### Feel free to fork this repo and use it as your starting point. 
+
+## Start here
 
 ```bash
 # Install dependencies
