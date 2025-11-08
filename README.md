@@ -1,5 +1,5 @@
 
-<h1>EvBagel 🥯
+<h1>EvBagel </h1>
 
 ![image](https://img.icons8.com/?size=100&id=u0SDdwgQXX72&format=png&color=000000)
 
