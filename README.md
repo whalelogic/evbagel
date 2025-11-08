@@ -4,8 +4,6 @@
 ![image](https://img.icons8.com/?size=100&id=u0SDdwgQXX72&format=png&color=000000)
 
 
-### This application works fast! 
-
 #### Feel free to fork this repo and use it as your starting point. 
 
 ## Start here
