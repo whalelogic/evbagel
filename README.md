@@ -15,6 +15,7 @@ go install github.com/a-h/templ/cmd/templ@latest
 make run
 ```
 
+
 The application will be available at `http://localhost:3000`
 
 ## Features
@@ -52,6 +53,8 @@ make run      # Build and run
 make clean    # Clean build artifacts
 make help     # Show all commands
 ```
+
+<img width="898" height="715" alt="image" src="https://github.com/user-attachments/assets/bf2057c9-9e44-4870-b4ee-4cfa9c536767" />
 
 ## License
 
