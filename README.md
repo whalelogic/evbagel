@@ -20,7 +20,6 @@ The application will be available at `http://localhost:3000`
 ## Features
 
 - 🚀 **Fiber v2** - Fast and efficient web framework
-- 📝 **Go html/template** - Traditional HTML templating
 - 🎨 **Templ Components** - Type-safe, reusable UI components
 - 💅 **Tailwind CSS** - Modern utility-first styling
 - 🔧 **Makefile** - Easy build and run commands
