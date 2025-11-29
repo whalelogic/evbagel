@@ -3,8 +3,12 @@
   <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/640c18a4-8133-4a02-9786-4f995a7838a5" />
 </p>
 
+###### A developer-friendly Go web template integrating html/template with Templ components. Designed for production from day one so you can move straight into SEO, security hardening, and feature development. 
 
-A modern Go web application demonstrating the integration of traditional HTML templates with Templ components.
+This template is a foundation for building serious applications. That's why it's called an <b>Everything Bagel</b>. It provides the server, routes, and layout with Home, About, and Contact .templ files.
+
+See [templ.guide](https://templ.guide) for more information. Also see screenshot below. 
+
 
 ## Quick Start
 
