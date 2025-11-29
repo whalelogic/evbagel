@@ -1,4 +1,8 @@
-# EvBagel
+
+<p align="center">
+  <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/640c18a4-8133-4a02-9786-4f995a7838a5" />
+</p>
+
 
 A modern Go web application demonstrating the integration of traditional HTML templates with Templ components.
 
